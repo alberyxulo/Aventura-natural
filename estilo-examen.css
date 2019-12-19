@@ -1,0 +1,68 @@
+/*********estilo de aventura natural*********/
+/************Layout de examen****************/
+
+/************Estilo general***********/
+body{background-color: rgb(235,235,210);
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+#wrapper{width: 98%;
+        margin: auto;}
+
+/*********Estilo header********/
+header{background-image: url("imagenes/cabecera.jpg");
+        height: 300px;
+        background-size: cover;
+        background-position: right;}
+/************ESTILO DE NAV************/
+nav{background-color: #000000;}
+
+nav ul {text-align: center;
+        margin: 0;
+        list-style: none;}
+
+nav ul li{display: inline-block;
+            padding: 10px;}
+
+nav ul li:hover{background-color: gray;}
+
+nav ul li a{ color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;}
+
+nav ul li a:hover{color: black;}
+
+/**********ESTILO DE MAIN********/
+main{background-color: white;
+     padding: 4%;}
+
+main h1{margin: 0;
+        color:rgb(255, 89, 117);
+        padding-bottom: 5% ;
+        text-align: center;}
+
+main img {width: 26%;
+          padding: 3%;}
+/*****ESTILO DE FOOTER*****/
+footer{background-color: #000000;}
+footer p {color:white;
+          text-align: center;
+          margin: 0;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+
+/********** MEDIAS QUERY******/
+/*******ESTILO PARA TABLET******/
+@media only screen and (max-width: 900px){ /*ancho <900*/
+        main img{width: 35%;
+                 padding: 4%;}
+}
+/********ESTILO para el movil********/
+@media only screen and (max-width: 600px){ /*ancho <600*/
+        header {background-image: url("imagenes/cabecera2.jpg");
+                height: 100vh;
+                background-position: center;}
+        main img{width: 90%;
+                 margin: 5%}
+}
